@@ -12,6 +12,8 @@
   {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
   {{ end }}
 
+  {{ partial "pagination" . }}
+
   {{ range .Paginator.Pages }}
   {{ .Render "content-list" }}
   {{ end }}
