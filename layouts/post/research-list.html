@@ -1,0 +1,7 @@
+<article class="post research-list">
+  <h1>{{ .Title | markdownify }}</h1>
+  {{ .Render "featured" }}
+  <a href="{{ .Permalink }}">
+    {{ .Summary }}
+  </a>
+</article>
