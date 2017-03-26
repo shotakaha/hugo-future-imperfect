@@ -1,0 +1,38 @@
+{{ "<!-- LOCAL : /layouts/_default/baseof.html -->" | safeHTML }}
+{{ partial "general-title" . }}
+<!DOCTYPE HTML>
+<!--
+     Future Imperfect by HTML5 UP
+     html5up.net | @n33co
+     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ "<!-- DEBUG : baseof.html : head starts here -->" | safeHTML }}
+  <head>
+    {{ partial "header" . }}
+  </head>
+  {{ "<!-- DEBUG : baseof.html : head ends here -->" | safeHTML }}
+
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      {{ "<!-- DEBUG : baseof.html : navbar starts here -->" | safeHTML }}
+      {{ partial "navbar" . }}
+      {{ "<!-- DEBUG : baseof.html : navbar ends here -->" | safeHTML }}
+
+      <!-- Main -->
+      <div id="main">
+        {{ block "main" . }}
+        {{ end }}
+      </div>
+      {{ "<!-- DEBUG : baseof.html : sidebar starts here -->" | safeHTML }}
+      {{ partial "sidebar" . }}
+      {{ "<!-- DEBUG : baseof.html : sidebar ends here -->" | safeHTML }}
+
+    </div>
+    {{ "<!-- DEBUG : baseof.html : footer starts here -->" | safeHTML }}
+      {{ partial "footer" . }}
+      {{ "<!-- DEBUG : baseof.html : footer ends here -->" | safeHTML }}
+  </body>
+</html>
