@@ -11,6 +11,7 @@
 {{ else }}
 {{ $.Scratch.Set "jsFiles" false }}
 {{ end }}
+{{ $.Scratch.Set "jsFiles" .Site.Params.customJS }}
 
 <!-- If the value "default" is passed into the param then we will first
      load the standard js files associated with the theme -->
