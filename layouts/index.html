@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $.Scratch.Set "shareNav" true }}
-{{ range first 1 (where .Data.Pages.ByPublishDate.Reverse "Type" "post") }}
+{{ range first 1 (where .Data.Pages.ByPublishDate "Type" "post") }}
 {{ .Render "content-single" }}
 {{ partial "share-menu" . }}
 {{ end }}
