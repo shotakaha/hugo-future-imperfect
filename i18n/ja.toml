@@ -6,3 +6,6 @@ other = "過去の記事を読む"
 
 [recentPosts]
 other = "最近の記事"
+
+[readingTime]
+other = "所要時間：約{{ .Count }}分"
