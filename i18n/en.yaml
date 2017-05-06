@@ -1,0 +1,20 @@
+- id : continueReading
+  translation : "Continue Reading"
+
+- id : viewMorePosts
+  translation : "View more posts"
+
+- id : recentPosts
+  translation : "Recent posts"
+
+- id : readingTime
+  translation : "{{ .Count }} minutes read"
+
+- id : previousPage
+  translation : "Previous page"
+
+- id : nextPage
+  translation : "Next page"
+
+- id : category
+  translation : "Categories"
