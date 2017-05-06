@@ -15,3 +15,6 @@ other = "前のページ"
 
 [nextPage]
 other = "次のページ"
+
+[category]
+other = "カテゴリー"
