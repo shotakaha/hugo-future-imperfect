@@ -9,3 +9,9 @@ other = "最近の記事"
 
 [readingTime]
 other = "所要時間：約{{ .Count }}分"
+
+[previousPage]
+other = "前のページ"
+
+[nextPage]
+other = "次のページ"
