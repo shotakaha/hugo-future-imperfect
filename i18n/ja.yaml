@@ -1,0 +1,20 @@
+- id : continueReading
+  translation : "続きを読む"
+
+- id : viewMorePosts
+  translation : "過去の記事を読む"
+
+- id : recentPosts
+  translation : "最近の記事"
+
+- id : readingTime
+  translation : "所要時間：約{{ .Count }}分"
+
+- id : previousPage
+  translation : "前のページ"
+
+- id : nextPage
+  translation : "次のページ"
+
+- id : category
+  translation : "カテゴリー"
