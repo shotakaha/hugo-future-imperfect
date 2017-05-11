@@ -71,9 +71,9 @@
         <ul class="actions">
           <li><a href=
                  {{ with .Site.Params.viewMorePostLink }}
-                 {{ . | relLangURL }}
+                 {{ . | absLangURL }}
                  {{ else }}
-                 "/post/"
+                 {{ "/post/ | absLangURL" }}
                  {{ end }}
                  class="button">{{ i18n "viewMorePosts" }}</a></li>
         </ul>
